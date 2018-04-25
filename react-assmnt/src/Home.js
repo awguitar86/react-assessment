@@ -64,7 +64,7 @@ class Home extends Component {
         return (
             <div className="body">
                 <div className="header">
-                    <h3 onClick={this.showTodo}>To-Do:</h3>
+                    <h3>To-Do:</h3>
                     <input className="new-todo-input" value={this.state.name} defaultvalue="" onChange={ e => {this.handleName(e.target.value) }}/>
                     <button className="add-new-todo" onClick={() => this.addTodo()}>Add New Todo</button>
                 </div>
