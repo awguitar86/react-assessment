@@ -1,28 +1,211 @@
-.App {
-  text-align: center;
+.body {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
+.header {
+  width: 400px;
   height: 150px;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.header button {
+  width: 100px;
+  height: 25px;
+  background-color: skyblue;
   color: white;
+  border: none;
+  margin-left: 10px;
+}
+.header h3 {
+  margin: 0;
+  margin-left: 10px;
 }
 
-.App-title {
-  font-size: 1.5em;
+.new-todo-input {
+  width: 380px;
+  height: 25px;
+  border: none;
+  border-bottom: solid 1px;
+  margin-left: 10px;
+  outline: none;
+  font-size: 12pt;
+}
+.new-todo-input:focus {
+  border-bottom: solid 1px blue;
 }
 
-.App-intro {
-  font-size: large;
+.todo-items {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: lightgray;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.todo-items a {
+  text-decoration: none;
+  margin-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.todo-item {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+  background: white;
+}
+.todo-item a {
+  color: black;
+}
+
+.completed-todo-item {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: skyblue;
+  margin: 5px;
+}
+.completed-todo-item a {
+  color: gray;
+}
+.completed-todo-item p {
+  text-decoration: line-through;
+}
+
+.todo-complete-delete {
+  margin-right: 10px;
+}
+
+.todo-complete-button {
+  width: 80px;
+  height: 20px;
+  border: none;
+  background-color: lightgray;
+}
+
+.delete-todo {
+  cursor: pointer;
+}
+
+/* Todo CSS */
+
+.todo-body {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.todo-wrap{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 40px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.todo-wrap a {
+  text-decoration: none;
+  color: black;
+  font-size: 10pt;
+}
+
+.title {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.complete-button {
+  width: 80px;
+  height: 26px;
+  margin-left: 20px;
+  border: none;
+  background-color: lightgray;
+}
+
+.todo-title {
+  margin: 0;
+  font-weight: normal;
+}
+
+.todo-title-input {
+  width: 240px;
+  height: 20px;
+  border: none;
+  border-bottom: solid 1px;
+  font-size: 12pt;
+  margin-top: 2px;
+  outline: none;
+}
+.todo-title-input{
+  border-bottom: solid 1px blue;
+}
+
+.description{
+  margin-top: 20px;
+}
+
+.todo-description{
+  margin: 0;
+  font-weight: normal;
+}
+
+.todo-description-input {
+  width: 240px;
+  height: 20px;
+  border: none;
+  border-bottom: solid 1px;
+  font-size: 12pt;
+  margin-top: 2px;
+  outline: none;
+}
+.todo-description-input:focus {
+  border-bottom: solid 1px blue;
+}
+
+.buttons {
+  width: 240px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.save {
+  width: 50px;
+  height: 25px;
+  background-color: skyblue;
+  color: white;
+  border: none;
+}
+
+.cancel {
+  width: 50px;
+  height: 25px;
+  background-color: gray;
+  color: white;
+  border: none;
+}
+
+.delete {
+  width: 50px;
+  height: 25px;
+  background-color: lightcoral;
+  color: white;
+  border: none;
 }
